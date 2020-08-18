@@ -1,4 +1,3 @@
-﻿using System.Security.Cryptography;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -41,8 +40,8 @@ public class FlexibleGridLayout : LayoutGroup
         float parentWidth = rectTransform.rect.width;
         float parentHeight = rectTransform.rect.height;
 
-        float cellWidth = (parentWidth / (float)columns) - ((spacing.x / (float)columns) * 2) - (padding.left / (float)columns) - (padding.right / (float)columns);
-        float cellHeight = (parentHeight / (float)rows) - ((spacing.y / (float)rows) * 2) - (padding.top / (float)rows) - (padding.bottom / (float)rows);
+        float cellWidth = (parentWidth / (float)columns) - ((spacing.x / ((float)columns)) * (columns - 1)) - (padding.left / (float)columns) - (padding.right / (float)columns);
+        float cellHeight = (parentHeight / (float)rows) - ((spacing.y / ((float)rows)) * (rows - 1)) - (padding.top / (float)rows) - (padding.bottom / (float)rows);
 
         cellSize.x = cellWidth;
         cellSize.y = cellHeight;
@@ -66,15 +65,9 @@ public class FlexibleGridLayout : LayoutGroup
 
     }
 
-    public override void CalculateLayoutInputVertical() {
+    public override void CalculateLayoutInputVertical() { }
 
-    }
+    public override void SetLayoutHorizontal() { }
 
-    public override void SetLayoutHorizontal() {
-
-    }
-
-    public override void SetLayoutVertical() {
-
-    }
+    public override void SetLayoutVertical() { }
 }
