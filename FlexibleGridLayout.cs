@@ -24,17 +24,17 @@ public class FlexibleGridLayout : LayoutGroup
 
         base.CalculateLayoutInputHorizontal();
 
-        float sqrRt = Mathf.Sqrt(transform.childCount);
+        float sqrRt = Mathf.Sqrt(rectChildren.Count);
         rows = Mathf.CeilToInt(sqrRt);
         columns = Mathf.CeilToInt(sqrRt);
 
         if (fitType == FitType.Width)
         {
-            rows = Mathf.CeilToInt(transform.childCount / (float)columns);
+            rows = Mathf.CeilToInt(rectChildren.Count / (float)columns);
         }
         if (fitType == FitType.Height)
         {
-            rows = Mathf.CeilToInt(transform.childCount / (float)rows);
+            rows = Mathf.CeilToInt(rectChildren.Count / (float)rows);
         }
 
         float parentWidth = rectTransform.rect.width;
