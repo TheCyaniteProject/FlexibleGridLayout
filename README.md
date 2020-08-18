@@ -4,7 +4,7 @@ An actually useable Grid Layout for Unity, as shown in this video: https://www.y
 This script is for a _flexable_ Grid Layout with auto-sizing shells. No more weird work-arounds for getting the default Grid Layout to fit all of your dynamically created objects!
 
 ### Old :S
-![Annotation 2020-08-17 214535](https://user-images.githubusercontent.com/26806429/90464472-0122ca80-e0d3-11ea-867c-53bb4338f33a.png)
+![Annotation 2020-08-17 214535](https://user-images.githubusercontent.com/26806429/90465387-e4879200-e0d4-11ea-8dc6-ab029aef46e6.png)
 ![oldgridlayout](https://user-images.githubusercontent.com/26806429/90465255-9bcfd900-e0d4-11ea-8ec1-92461e747d02.gif)
 
 
